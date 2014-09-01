@@ -1,0 +1,20 @@
+<div class="container">
+	<div class="navbar-header page-scroll">
+		<button type="button" class="navbar-toggle" data-toggle="collapse"
+			data-target=".navbar-main-collapse">
+			<i class="fa fa-bars"></i>
+		</button>
+		<a class="navbar-brand" href="#page-top"> <span class="light">{{title}}</span>
+		</a>
+	</div>
+
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+		<ul class="nav navbar-nav">
+			<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+			<li class="hidden"><a href="#page-top"></a></li>
+			<li class="page-scroll" ng-repeat="category in categories"><a
+				href="#">{{category.name}}</a></li>
+		</ul>
+	</div>
+</div>
